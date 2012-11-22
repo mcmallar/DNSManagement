@@ -81,7 +81,8 @@ namespace DNSManagement
                         else
                         {
                             string name = m["OwnerName"].ToString();
-                            name = name.Replace("unvienna.org", "");
+                            int dotLocation = name.IndexOf(".");
+                            name = name.Substring(0, dotLocation);
                             if (name.IndexOf(txtFilter.Text) > -1)
                                 dgvDnsARecords.Rows.Add(m["IPAddress"], m["OwnerName"], m["DnsServerName"], timestamp, m["TTL"]);
                         }

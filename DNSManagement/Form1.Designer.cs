@@ -53,9 +53,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tabSettings = new System.Windows.Forms.TabPage();
             this.lblSettingsSaved = new System.Windows.Forms.GroupBox();
+            this.btnSaveSettings = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDnsServer = new System.Windows.Forms.TextBox();
-            this.btnSaveSettings = new System.Windows.Forms.Button();
             this.tabDNS.SuspendLayout();
             this.tabCheckDnsARecords.SuspendLayout();
             this.grpFilter.SuspendLayout();
@@ -261,9 +261,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 3);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(327, 13);
+            this.label2.Size = new System.Drawing.Size(241, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Checking for orphaned (only TXT entry) in UNVIENNA.ORG domain";
+            this.label2.Text = "Checking for orphaned (only TXT entry) in domain";
             // 
             // tabSettings
             // 
@@ -289,6 +289,16 @@
             this.lblSettingsSaved.TabStop = false;
             this.lblSettingsSaved.Text = "Settings";
             // 
+            // btnSaveSettings
+            // 
+            this.btnSaveSettings.Location = new System.Drawing.Point(303, 17);
+            this.btnSaveSettings.Name = "btnSaveSettings";
+            this.btnSaveSettings.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveSettings.TabIndex = 2;
+            this.btnSaveSettings.Text = "Save";
+            this.btnSaveSettings.UseVisualStyleBackColor = true;
+            this.btnSaveSettings.Click += new System.EventHandler(this.btnSaveSettings_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -304,16 +314,6 @@
             this.txtDnsServer.Name = "txtDnsServer";
             this.txtDnsServer.Size = new System.Drawing.Size(190, 20);
             this.txtDnsServer.TabIndex = 0;
-            // 
-            // btnSaveSettings
-            // 
-            this.btnSaveSettings.Location = new System.Drawing.Point(303, 17);
-            this.btnSaveSettings.Name = "btnSaveSettings";
-            this.btnSaveSettings.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveSettings.TabIndex = 2;
-            this.btnSaveSettings.Text = "Save";
-            this.btnSaveSettings.UseVisualStyleBackColor = true;
-            this.btnSaveSettings.Click += new System.EventHandler(this.btnSaveSettings_Click);
             // 
             // Form1
             // 
